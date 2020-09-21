@@ -20,7 +20,29 @@ lis[3].textContent = 'hi';
 lisArr = Array.from(lis);
 lisArr.reverse();
 
-lisArr.forEach(function(lis) {
+lisArr.forEach(function(lis, index) {
     console.log(lis.className);
+    lis.textContent = `${index}: hello`; //see reversed index order
 })
 console.log(lisArr);
+
+//document.querySelectorAll():
+const queries = document.querySelectorAll('ul.collection li.collection-item');
+queries.forEach(function(query, index) {
+    query.textContent = `${index}: hi`;
+})
+
+//forEach loop can ONLY be used in array, but for loop can be used even in HTML collection:
+const oddList = document.querySelectorAll('li:nth-child(odd)');
+const evenList = document.querySelectorAll('li:nth-child(even)');
+
+oddList.forEach(function(li, index) {
+    li.style.background = '#ccc';
+})
+
+//这里的length，[i]都被用在不是array的元素上也可以：
+for (let i = 0; i < evenList.length; i++) {
+    evenList[i].style.background = '#00FFFF';
+}
+
+console.log(queries);
