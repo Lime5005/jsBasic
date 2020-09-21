@@ -14,3 +14,6 @@ console.log('hello');
 console.log('hello');
 console.log('hello');
 console.timeEnd('hello'); //hello: 0.17822265625 ms
+const today = new Date();
+console.log(today); //Fri Sep 18 2020 23:30:42 GMT+0200 (Central European Summer Time)
+console.log(typeof today); //object
