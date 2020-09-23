@@ -34,5 +34,5 @@ function deleteItem(e) {
         //我们的目的是移除i->a->li，层层推进，就是移除整个list
         e.target.parentElement.parentElement.remove();
     }
-    //console.log(e.target); //这里发现要点击的是fa fa-remove的class
+    //console.log(e.target); //这里发现要点击的是class: fa fa-remove
 }
