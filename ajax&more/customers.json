@@ -1,0 +1,19 @@
+[{
+        "id": 1,
+        "name": "Lily",
+        "company": "123 designs",
+        "phone": "111-222-333"
+    },
+    {
+        "id": 2,
+        "name": "Joe Biden",
+        "company": "789 designs",
+        "phone": "777-888-999"
+    },
+    {
+        "id": 3,
+        "name": "Donald Trump",
+        "company": "456 designs",
+        "phone": "444-555-666"
+    }
+]
