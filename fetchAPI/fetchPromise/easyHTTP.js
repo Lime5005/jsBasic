@@ -59,7 +59,7 @@ class easyHTTP {
                     }
                 })
                 .then(res => res.json())
-                .then(res('Resource deleted...'))
+                .then(() => res('Resource deleted...'))
                 .then(err => rej(err));
         })
     }
